@@ -58,19 +58,22 @@ Follow the instructions in `Continuous_Control.ipynb` to start working with the 
 1. Start Reacher Environment
 2. Examing State and Action Spaces in the Environment
 3. Take Random Actions in the Environment
-4. It's Your Turn! (Assignment Solution)
+4. It's Your Turn! (Training Solution)
+5. Test Trained Agents
 
 
 All work is outlined in tarting in Section 4. Once the Jupyter Notebook kernel started, you can start code from this section.
 
-#### Model.py
-"model.py"
+#### model.py
+
+Both the actor and the critic architecture are composed of neural networks with two hidden layers, each with 128 nodes. Both also use the Leaky Rectified Linear Unit activation function, with a leakiness parameter that can be changed via an DDPG Agent argument.
 
 #### ddpgagent.py
 
+The algorithm used in this assignment is DDPG. 
 
 #### Training Process Notes
-I attempted to train a DDPG brain using the Reacher environment that only has one agent. However, I wasn't able to train a brain with acceptable average rewards. Shifting to the second training option, I was able to train a brain.
+I recommend using the 20 Reacher Environment. I attempted to train a DDPG brain using the Reacher environment that only has one agent. However, I wasn't able to train a brain with acceptable average rewards. Shifting to the second training option, I was able to train a brain. 
 
 Follow the recommendations provided by the Udacity mentor in the question I posted: [Why is my Continuous Control agent not reaching +30 average reward?](https://knowledge.udacity.com/questions/855616)
 
@@ -79,4 +82,4 @@ Follow the recommendations provided by the Udacity mentor in the question I post
 
 | Random agent             |  Trained agent |
 :-------------------------:|:-------------------------:
-![Random Agent](results/20_Reacher_Random_Brain.gif)  |  ![Trained Agent](results/trained_agent.gif)
+![Random Agent](results/20_Reacher_Random_Brain.gif)  |  ![Trained Agent](results/20_Reacher_Trained_Brain.gif)
